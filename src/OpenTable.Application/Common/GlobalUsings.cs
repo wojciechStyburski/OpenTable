@@ -1,0 +1,11 @@
+﻿global using OpenTable.Application.DTO;
+global using OpenTable.Core.Entities;
+global using OpenTable.Core.Repositories;
+global using OpenTable.Core.ValueObjects;
+global using Microsoft.Extensions.DependencyInjection;
+global using OpenTable.Core.DomainServices;
+global using OpenTable.Application.Abstractions;
+global using OpenTable.Core.Exceptions;
+global using OpenTable.Application.Exceptions;
+global using OpenTable.Core.Common;
+global using OpenTable.Application.Security;

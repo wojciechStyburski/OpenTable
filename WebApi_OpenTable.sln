@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD652336-8B04-4055-B46A-FCF737BCF531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTable.Api", "src\OpenTable.Api\OpenTable.Api.csproj", "{2479642B-1164-448B-B7D8-86691901F00D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A35F49EA-F537-4AEE-BDA4-DD9B4E23D9C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTable.Tests.Unit", "tests\OpenTable.Tests.Unit\OpenTable.Tests.Unit.csproj", "{57928B94-7BCC-494A-8D16-2B43E3956E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTable.Core", "src\OpenTable.Core\OpenTable.Core.csproj", "{0566A001-29DB-4806-8B08-AC55F56BA2FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTable.Application", "src\OpenTable.Application\OpenTable.Application.csproj", "{72C05CEE-7F4C-47A4-BD07-9DF07F1EFB2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTable.Infrastructure", "src\OpenTable.Infrastructure\OpenTable.Infrastructure.csproj", "{98507600-3DEC-4CB6-90FA-5BFBC4AB1E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTable.Tests.Integration", "tests\OpenTable.Tests.Integration\OpenTable.Tests.Integration.csproj", "{E228BE1D-A49F-4E03-AE46-A209EFD9E2EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2479642B-1164-448B-B7D8-86691901F00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2479642B-1164-448B-B7D8-86691901F00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2479642B-1164-448B-B7D8-86691901F00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2479642B-1164-448B-B7D8-86691901F00D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57928B94-7BCC-494A-8D16-2B43E3956E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57928B94-7BCC-494A-8D16-2B43E3956E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57928B94-7BCC-494A-8D16-2B43E3956E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57928B94-7BCC-494A-8D16-2B43E3956E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0566A001-29DB-4806-8B08-AC55F56BA2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0566A001-29DB-4806-8B08-AC55F56BA2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0566A001-29DB-4806-8B08-AC55F56BA2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0566A001-29DB-4806-8B08-AC55F56BA2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72C05CEE-7F4C-47A4-BD07-9DF07F1EFB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C05CEE-7F4C-47A4-BD07-9DF07F1EFB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72C05CEE-7F4C-47A4-BD07-9DF07F1EFB2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72C05CEE-7F4C-47A4-BD07-9DF07F1EFB2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98507600-3DEC-4CB6-90FA-5BFBC4AB1E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98507600-3DEC-4CB6-90FA-5BFBC4AB1E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98507600-3DEC-4CB6-90FA-5BFBC4AB1E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98507600-3DEC-4CB6-90FA-5BFBC4AB1E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E228BE1D-A49F-4E03-AE46-A209EFD9E2EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E228BE1D-A49F-4E03-AE46-A209EFD9E2EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E228BE1D-A49F-4E03-AE46-A209EFD9E2EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E228BE1D-A49F-4E03-AE46-A209EFD9E2EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2479642B-1164-448B-B7D8-86691901F00D} = {AD652336-8B04-4055-B46A-FCF737BCF531}
+		{57928B94-7BCC-494A-8D16-2B43E3956E72} = {A35F49EA-F537-4AEE-BDA4-DD9B4E23D9C5}
+		{0566A001-29DB-4806-8B08-AC55F56BA2FF} = {AD652336-8B04-4055-B46A-FCF737BCF531}
+		{72C05CEE-7F4C-47A4-BD07-9DF07F1EFB2F} = {AD652336-8B04-4055-B46A-FCF737BCF531}
+		{98507600-3DEC-4CB6-90FA-5BFBC4AB1E86} = {AD652336-8B04-4055-B46A-FCF737BCF531}
+		{E228BE1D-A49F-4E03-AE46-A209EFD9E2EA} = {A35F49EA-F537-4AEE-BDA4-DD9B4E23D9C5}
+	EndGlobalSection
+EndGlobal

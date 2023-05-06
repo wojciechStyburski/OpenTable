@@ -1,0 +1,84 @@
+@url = http://localhost:5000
+@reservationId = ff750880-e204-4adb-b307-e95dbedd63aa
+@tableId = e1afb102-5d3d-4755-a9ad-acc672f8832c
+@userId = 19cf8a39-2218-4cb1-8d36-3eb29647efd2
+
+###
+GET {{url}}/api-name
+
+###
+GET {{url}}/health-check
+
+###
+POST {{url}}/users/sign-up
+Content-Type: application/json
+
+{
+   "Email": "admin@o2.pl",
+   "UserName": "testowy_admin",
+   "Password": "123password",
+   "FullName": "Piotr Nowak",
+   "Role": "admin"
+}
+
+###
+# @name sign_in
+POST {{url}}/users/sign-in
+Content-Type: application/json
+
+{
+   "Email": "admin@o2.pl",
+   "Password": "123password"
+}
+
+###
+@accessToken = {{sign_in.response.body.$.accessToken}}
+
+###
+GET {{url}}/users/me
+Authorization: Bearer {{accessToken}}
+
+###
+GET {{url}}/users
+Authorization: Bearer {{accessToken}}
+
+###
+GET {{url}}/users/{{userId}}
+Authorization: Bearer {{accessToken}}
+
+###
+GET {{url}}/tables
+
+###
+POST {{url}}/tables/{{tableId}}/reservations/customer
+Content-Type: application/json
+
+{
+    "CustomerName": "John Doe",
+    "PhoneNumber": "789654123",
+    "From": "2023-04-26T17:15:00.000Z",
+    "To": "2023-04-26T19:00:00.000Z",
+    "Capacity": 2,
+    "UserId": "{{userId}}"
+}
+    
+
+###
+POST {{url}}/tables/reservations/holiday
+Content-Type: application/json
+
+{
+    "Date": "2023-04-18"
+}
+
+###
+PUT {{url}}/tables/reservations/{{reservationId}}
+Content-Type: application/json
+
+{
+    "PhoneNumber": "852321456"
+}
+
+###
+DELETE {{url}}/tables/reservations/{{reservationId}}
+
